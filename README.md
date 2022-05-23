@@ -1,7 +1,19 @@
-# Website for the AS Project
+## `npm install`
 
-## Starting out
+run on first setup
 
-git clone -b master https://github.com/AS-Art-Design-20212022/website.git
+## `npm start`
 
-Use branch master to publish code. Branch master's README has info on how to test and deploy website.
+Runs the app in the development mode.\
+Open [http://localhost:3000/website](http://localhost:3000/website) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+## `npm run deploy`
+
+deploys to github pages
+
+## `git push origin master`
+
+commits code to branch master

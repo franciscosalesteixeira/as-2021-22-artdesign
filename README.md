@@ -13,7 +13,3 @@ You may also see any lint errors in the console.
 ## `npm run deploy`
 
 deploys to github pages
-
-## `git push origin master`
-
-commits code to branch master

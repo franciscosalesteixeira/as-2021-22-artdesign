@@ -10,18 +10,18 @@ function App() {
       <div className="App">
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
           <div className="container">
-            <Link className="navbar-brand" to={'/sign-in'}>
+            <Link className="navbar-brand" to={'/website/sign-in'}>
               Plataforma
             </Link>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
               <ul className="navbar-nav ml-auto">
                 <li className="nav-item">
-                  <Link className="nav-link" to={'/sign-in'}>
+                  <Link className="nav-link" to={'/website/sign-in'}>
                     Login
                   </Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to={'/sign-up'}>
+                  <Link className="nav-link" to={'/website/sign-up'}>
                     Sign up
                   </Link>
                 </li>
@@ -33,8 +33,8 @@ function App() {
           <div className="auth-inner">
             <Routes>
               <Route path="/website" element={<Login />} />
-              <Route path="/sign-in" element={<Login />} />
-              <Route path="/sign-up" element={<SignUp />} />
+              <Route path="/website/sign-in" element={<Login />} />
+              <Route path="/website/sign-up" element={<SignUp />} />
             </Routes>
           </div>
         </div>

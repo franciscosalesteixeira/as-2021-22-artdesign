@@ -2,6 +2,7 @@ import React from 'react'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import './App.css'
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom'
+import MainPage from './components/mainpage'
 import Login from './components/login'
 import SignUp from './components/signup'
 function App() {
@@ -10,7 +11,7 @@ function App() {
       <div className="App">
         <nav className="navbar navbar-expand-lg navbar-light fixed-top">
           <div className="container">
-            <Link className="navbar-brand" to={'/website/login'}>
+            <Link className="navbar-brand" to={'/website'}>
               Plataforma
             </Link>
             <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -29,15 +30,11 @@ function App() {
             </div>
           </div>
         </nav>
-        <div className="auth-wrapper">
-          <div className="auth-inner">
-            <Routes>
-              <Route path="/website" element={<Login />} />
-              <Route path="/website/login" element={<Login />} />
-              <Route path="/website/sign-up" element={<SignUp />} />
-            </Routes>
-          </div>
-        </div>
+        <Routes>
+          <Route path="/website" element={<MainPage />} />
+          <Route path="/website/login" element={<Login />} />
+          <Route path="/website/sign-up" element={<SignUp />} />
+        </Routes>
       </div>
     </Router>
   )

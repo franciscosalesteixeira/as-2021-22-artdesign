@@ -15,6 +15,7 @@ app
 
 // Listen to requests
 app.listen(process.env.PORT || 5000)
+console.log(`Listening on port 5000`)
 
 // Routes
 app.get('/', (req, res) => {

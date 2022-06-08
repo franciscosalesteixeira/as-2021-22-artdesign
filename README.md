@@ -6,7 +6,7 @@ node server.js
 
 ## cloning heroku repository
 heroku login\
-heroku git:clone -a warm-savannah-50992\
+heroku git:clone -a warm-savannah-50992
 
 ## deploying - copy your local changes into the repo
 

@@ -1,15 +1,15 @@
-## `npm install`
+## on git clone or git pull
+run npm install for good measure
 
-run on first setup
+## run server
+node server.js
 
-## `npm start`
+## cloning heroku repository
+heroku login\
+heroku git:clone -a warm-savannah-50992\
 
-Runs the app in the development mode.\
-Open [http://localhost:3000/website](http://localhost:3000/website) to view it in your browser.
+## deploying - copy your local changes into the repo
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-## `npm run deploy`
-
-deploys to github pages
+git add .\
+git commit -m "comment"\
+git push https://git.heroku.com/warm-savannah-50992.git

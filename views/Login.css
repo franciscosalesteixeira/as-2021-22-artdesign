@@ -1,4 +1,8 @@
- .u-section-1 {
+p {
+  padding-bottom: 1px;
+}
+
+.u-section-1 {
   min-height: 100vh;
 }
 

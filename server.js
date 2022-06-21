@@ -22,6 +22,8 @@ var firebaseApp = firebaseapp.initializeApp(firebaseConfig);
 // Create app
 var app = express();
 
+var configData = require('./views/designs.json');
+
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({  extended: true
 }))
@@ -47,7 +49,7 @@ console.log(`Listening on port 5000`)
 // Routes
 app.get('/', (req, res) => {
 
-    res.render('index', { session: req.session });
+    res.render('index', { session: req.session, designs: configData.designs });
 
 },
 
@@ -89,7 +91,7 @@ app.post('/login', async(req, res) => {
             res.redirect('Login.html')
             alert(error.code)
         });
-        res.redirect('index.html');
+        res.redirect('/');
         
     } catch(e) {
         

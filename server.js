@@ -22,7 +22,7 @@ var firebaseApp = firebaseapp.initializeApp(firebaseConfig);
 // Create app
 var app = express();
 
-var configData = require('./views/designs.json');
+var configData = require('./assets/designs.json');
 
 // parse application/x-www-form-urlencoded
 app.use(bodyParser.urlencoded({  extended: true

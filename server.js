@@ -48,10 +48,20 @@ console.log(`Listening on port 5000`)
 
 // Routes
 app.get('/', (req, res) => {
-
     res.render('index', { session: req.session, designs: configData.designs });
+});
 
-},
+app.get('/Design_Page', (req, res) => {
+    res.render('Design_Page', { query : req.query.id, designs: configData.designs});
+});
+
+app.get('/Payment', (req, res) => {
+    res.render('Payment', { query : req.query.id, designs: configData.designs});
+});
+
+app.get('/Payment_Info', (req, res) => {
+    res.render('Payment_Info', { query : req.query.id, designs: configData.designs});
+});
 
 app.post('/register', async(req, res) => {
 
@@ -73,7 +83,7 @@ app.post('/register', async(req, res) => {
     } catch(e) {
         
     }
-}),
+});
 
 app.post('/login', async(req, res) => {
 
@@ -96,4 +106,5 @@ app.post('/login', async(req, res) => {
     } catch(e) {
         
     }
-}))
+});
+
